@@ -31,11 +31,11 @@ export const Account = () => {
       </p>
       {data &&
         data.accountTitlesText.map((title: string, index: number) => (
-          <Card className="flex flex-col shadow-md lg:flex-row justify-center items-center p-4 lg:gap-x-4 gap-y-4">
-            <p
-              key={index}
-              className="bg-slate-200 lg:text-base text-sm font-semibold py-3 px-4 rounded-xl shadow-sm border border-slate-300"
-            >
+          <Card
+            key={index}
+            className="flex flex-col shadow-md lg:flex-row justify-center items-center p-4 lg:gap-x-4 gap-y-4"
+          >
+            <p className="bg-slate-200 lg:text-base text-sm font-semibold py-3 px-4 rounded-xl shadow-sm border border-slate-300">
               {title}
             </p>
             <Button
